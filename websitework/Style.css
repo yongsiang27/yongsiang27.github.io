@@ -1,0 +1,547 @@
+/* format */
+.body{
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: 0;
+margin: 0;
+padding: 0;}
+
+
+/* header */
+.site-header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #003366;
+padding: 10px 20px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.3);}
+
+
+main{
+padding: 20px;
+text-align: center;
+margin-top: 80px;}
+
+
+/* logo */
+.logo{
+width: 150px;
+height: auto;}
+
+
+/* header style */
+.main-nav ul{
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;}
+
+
+/* background video */
+.video-welcome{
+position: relative;
+height: 400px;
+overflow: hidden;}
+
+
+.video-welcome video{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+min-width: 100%;
+min-height: 100%;
+object-fit: cover;
+z-index: 0;}
+
+
+.video-welcome .video-text{
+position: relative;
+z-index: 1;
+color: white;
+text-align: center;
+padding-top: 120px;
+background-color: rgba(0, 0, 0, 0.4);
+height: 100%;}
+
+
+.video-welcome .video-text h1{
+font-size: 60px;
+font-weight: bold;
+margin-bottom: 10px;
+line-height: 1.2;}
+
+
+/* popular courses */
+.popular-courses{
+background-color: #ffffff;
+padding: 40px 20px;
+text-align: center;}
+
+.popular-courses h2{
+font-size: 36px;
+margin-bottom: 30px;
+color: #003366;}
+
+.course-list{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 20px;}
+
+.course-card{
+background-color: #f4f4f4;
+border-radius: 10px;
+padding: 20px;
+width: 300px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s;}
+
+.course-card:hover{
+transform: translateY(-5px);
+background-color: #e0e0e0;}
+
+.course-card h3{
+color: #003366;
+margin-bottom: 10px;}
+
+.course-card p{
+font-size: 15px;
+color: #333;}
+
+
+.announcement-section{
+background-image: url('news.png');
+background-size: cover;
+background-position: center;
+padding: 40px 20px;
+color: white;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);}
+
+
+.main-nav li{
+margin-left: 20px;}
+
+.main-nav a{
+margin-right: 70px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 12px;}
+
+.main-nav a:hover{
+background-color: #0055aa;
+border-radius: 4px;}
+
+
+/* main content */
+main{
+padding: 20px;
+text-align: center;}
+
+footer{
+padding: 10px;
+background-color: #003366;
+color: white;
+text-align: center;}
+
+.footer-section h3 a{
+color: #f0db4f;
+text-decoration: none;}
+
+.footer-section h3 a:hover{
+text-decoration: underline;}
+
+.social-icons img{
+width: 30px;
+height: 30px;
+transition: transform 0.2s;}
+
+
+.about-section{
+font-size: 20px;
+color: white;
+-webkit-text-stroke: 1px #222;
+text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+background-image: url('aboutusbg.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+padding: 60px 30px;
+font-weight: bold;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0,.7);
+border-radius: 8px;}
+
+
+.team-section{
+background-color: #f9f9f9;
+padding: 50px 20px;
+text-align: center;}
+
+
+.team-section{
+font-size: 36px;
+margin-bottom: 40px;
+color: #003366;}
+
+
+.team-grid{
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;}
+
+
+.team-member{
+background-color: white;
+padding: 20px;
+border-radius: 12px;
+width: 250px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;}
+
+
+.team-member:hover{
+transform: scale(1.05);}
+
+
+.team-member img{
+width: 100%;
+border-radius: 50%;
+height: 220px;
+object-fit: cover;
+margin-bottom: 15px;}
+
+
+.team-member h3{
+color: #003366;
+margin-bottom: 5px;}
+
+
+.team-member p{
+font-size: 14px;
+color: #555;}
+
+
+.courses-section{
+padding: 40px 20px;
+text-align: center;
+background-color: #f4f4f4;}
+
+
+.courses-section h1{
+color: white;
+font-size: 36px;
+margin-bottom: 10px;}
+
+
+.courses-section p{
+font-size: 16px;
+margin-bottom: 30px;
+color: white;}
+
+
+.courses-grid{
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;}
+
+
+.course-card{
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+padding: 20px;
+width: 280px;
+transition: tranform 0.3s ease;}
+
+
+.course-card:hover{
+transform: translateY(-5px);}
+
+
+.course-card h2{
+color: #003366;
+font-size: 20px;
+margin-bottom: 10px;}
+
+
+.course-card p{
+font-size: 14px;
+color: #555;}
+
+
+.courses-bg{
+background-image: url('coursesbg.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: white;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+padding: 60px 20px;
+border-radius: 10px;}
+
+
+.course-card img{
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 8px 8px 0 0;
+margin-bottom: 15px;}
+
+
+.jumping-text{
+display: inline-block;
+font-size: 36px;
+font-weight: bold;
+animation: jump 1s infinite;}
+
+
+@keyframes jump{
+0% { transform: translateY(0); }
+30% { transform: translateY(-20px); }
+50% { transform: translateY(0); }
+70% { transform: translateY(-10px); }
+100% { transform: translateY(0); }
+}
+
+
+.animated-logo{
+animation: pulse-left-right 2s infinite ease-in-out;
+transform-origin: left center;}
+
+
+@keyframes pulse-left-right{
+0%{
+transform: scaleX(1);
+}
+50%{
+transform: scaleX(1.2);
+}
+100%{
+transform: scaleX(1);
+}}
+
+
+.admissions-section{
+padding: 60px 20px;
+background-image: url('admissionbg.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: black;
+border-radius: 12px;
+text-align: center;}
+
+
+.admission-section h1{
+font-size: 36px;
+color: #003366;}
+
+
+.admission-steps{
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;}
+
+
+.step{
+background-color: white;
+padding: 20px;
+width: 280px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+text-align: left;}
+
+
+.step h2{
+font-size: 14px;
+color: #555;}
+
+
+.apply-button{
+display: inline-block;
+margin-top: 15px;
+background-color: #003366;
+color: white;
+text-decoration: none;
+border-radius: 5px;}
+
+
+.apply-button:hover{
+background-color: #0055aa;}
+
+
+.form-section{
+padding: 50px 20px;
+background-color: #f4f4f4;
+text-align: center;}
+
+
+.application-form{
+max-width: 600px;
+margin: 0 auto;
+text-align: left;
+background-color: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+
+
+.application-form label{
+display: block;
+margin-top: 15px;
+font-weight: bold;
+color: #003366;}
+
+
+.application-form input,
+.application-form select,
+.application-form textarea{
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-family: Arial, sans-serif;}
+
+
+.application-form button{
+margin-top: 20px;
+background-color: #003366;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;}
+
+
+.application-form button:hover{
+background-color: #0055aa;}
+
+
+.password-form{
+max-width: 400px;
+margin: 40px auto;
+padding: 20px;
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+font-family: Arial, sans-serif;}
+
+
+.password-form label{
+font-weight: bold;
+margin-bottom: 8px;
+display: block;
+color: #003366;}
+
+
+.password.form input[type="password"]{
+width: 100%;
+padding: 10px;
+margin-bottom: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 16px;}
+
+
+#strengthMessage{
+font-weight: bold;
+padding: 10px;
+border-radius: 6px;
+margin-top: 5px;
+text-align: center;
+font-size: 14px;}
+
+
+.weak{
+background-color: #ffcccc;
+color: black;}
+
+
+.medium{
+background-color: #fff3cd;
+color: black;}
+
+
+.strong{
+background-color: #d4edda;
+color: black;}
+
+
+.contact-section{
+padding: 60px 20px;
+background: url('contactus.png') no-repeat center center/cover;
+color: white;
+text-align: center;
+text-shadow: 1px 1px 4px rgba(0,0,0,0.7);}
+
+
+.contact-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 40px;
+margin-top: 40px;}
+
+
+.contact-info{
+flex: 1;
+min-width: 300px;
+max-width: 400px;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 20px;
+border-radius: 10px;
+text-align: left;
+color: white;}
+
+
+.contact-form label{
+display: block;
+margin-top: 15px;
+font-weigth: bold;}
+
+
+.contact-form input,
+.contact-form textarea{
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border-radius: 6px;
+border: 1px solid #ccc;
+font-size: 16px;}
+
+
+.contact-form button{
+margin-top: 20px;
+background-color: #003366;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;}
+
+
+.contact-form button:hover{
+background-color: #0055aa;}
+
+
+@media (max-width: 768px){
+.contact-container{
+flex.direction: column;
+align-items: center;}
+
+
+.contact-info, .contact-form{
+width: 90%;}
+}

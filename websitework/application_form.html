@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Application Form</title>
+<link rel="icon" href="icon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header Section -->
+<header class="site-header">
+<img src="logo.png" alt="Very Big Muscle University Logo" class="logo animated-logo"/>
+<nav class="main-nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Aboutus.html">About</a></li>
+<li><a href="Courses.html">Courses</a></li>
+<li><a href="Admissions.html">Admissions</a></li>
+<li><a href="Studentlife.html">Studentlife</a></li>
+<li><a href="Contactus.html">Contact us</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="form-section">
+<h1>Application Form</h1>
+<p>Please fill in your details below to apply to Very Big Muscle University.</p>
+<form action="#" method="post" class="application-form">
+<label for="fullname">Full Name</label>
+<input type="text" id="fullname" name="fullname" required />
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required />
+
+<label for="password">Create a Password</label>
+<input type="password" id="password" name="password" onkeyup="checkPasswordStrength()" required />
+<div id="strengthMessage"></div>
+
+
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" required />
+
+<label for="dob">Date Of Birth</label>
+<input type="date" id="dob" name="dob" required />
+
+<label for="program">Select Program</label>
+<select id="program" name="program required>
+<option value="">-- Please choose a course --</option>
+<option value="cs">Diploma in Computer Science</option>
+<option value="dib">Diploma in Business</option>
+<option value="sports">Diploma in Sports Science</option>
+<option value="fitness">Diploma in Fitness & Coaching</option>
+<option value="airline">Diploma in Airline Services</option>
+<option value="accounting">Diploma in Accounting</option>
+</select>
+
+<label for="documents">Upload Supporting Documents</label>
+<input type="file" id="documents" name="documents" required />
+<label for="message">Additional Message (optional)</label>
+<textarea id="message" name="message" rows="4"></textarea>
+
+
+<button type="submit">Submit Application</button>
+
+<hr>
+
+<footer class="site-footer">
+<div class="footer-content">
+<div class="footer-section">
+<h3><a href="aboutus.html">About Us</a></h3>
+</div>
+<div class="footer-section">
+<h3><a href="contactus.html">Contact Us</a></h3>
+</div>
+<div class="footer-section">
+<h3>Follow us</h3>
+<div class="social-icons">
+<a href="https://www.facebook.com/"><img src="fb.png" alt="Facebook"></a>
+<a href="https://www.instagram.com/"><img src="ins.png" alt="Instagram"></a>
+<a href="https://www.youtube.com/"><img src="yt.png" alt="Youtube"></a>
+</div>
+</div>
+</div>
+<p class="footer-bottom">&copy; 2025 Very Big Muscle University.<br>Designed by: Yong Siang</p>
+</footer>
+
+<script>
+function checkPasswordStrength() {
+  const password = document.getElementById("password").value;
+  const strengthMessage = document.getElementById("strengthMessage");
+
+  let strength = "";
+  let strengthClass = "";
+
+  if (password.length < 6) {
+    strength = "Weak";
+    strengthClass = "weak";
+  } else if (password.match(/[a-z]/) && password.match(/[0-9]/) && password.length >= 8) {
+    strength = "Medium";
+    strengthClass = "medium";
+  } else if (password.match(/[a-z]/) && password.match(/[A-Z]/) &&
+             password.match(/[0-9]/) && password.match(/[^a-zA-Z0-9]/) &&
+             password.length >= 10) {
+    strength = "Strong";
+    strengthClass = "strong";
+  } else {
+    strength = "Medium";
+    strengthClass = "medium";
+  }
+
+  strengthMessage.textContent = `Password Strength: ${strength}`;
+  strengthMessage.className = strengthClass;
+}
+</script>
+
+</body>
+</html>
